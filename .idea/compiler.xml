@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="eurekaService" />
+        <module name="WasteManagerAddressService" />
+        <module name="WasteManagerService" />
+        <module name="CloudConfigServer" />
+        <module name="GatewayService" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="CloudConfigServer" target="17" />
+      <module name="eurekaService" target="17" />
+      <module name="GatewayService" target="17" />
+      <module name="WasteManagerAddressService" target="17" />
+      <module name="WasteManagerService" target="17" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="CloudConfigServer" options="-parameters" />
+      <module name="GatewayService" options="-parameters" />
+      <module name="WasteManagerAddressService" options="-parameters" />
+      <module name="WasteManagerService" options="-parameters" />
+      <module name="eurekaService" options="-parameters" />
+    </option>
+  </component>
+</project>

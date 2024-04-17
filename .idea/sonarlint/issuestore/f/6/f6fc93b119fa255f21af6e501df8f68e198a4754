@@ -1,0 +1,5 @@
+
+b	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(¾ê§¡8ü˜Ç“î1
+b	java:S112""FDefine and throw a dedicated exception instead of using a generic one.(¾ê§¡8ı˜Ç“î1
+N
+java:S1905"1Remove this unnecessary cast to "ResponseEntity".(çÖÌ8ş´Š”î1

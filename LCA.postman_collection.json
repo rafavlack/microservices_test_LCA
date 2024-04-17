@@ -1,0 +1,91 @@
+{
+	"info": {
+		"_postman_id": "78b8a125-3a66-430e-95a3-ba2a46c4c9e7",
+		"name": "LCA",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"nombre\": \"Nombre del gestor de residuos\",\r\n    \"nif\": \"NIF del gestor de residuos\",\r\n    \"wasteManagerAddressEntity\": {\r\n        \"id\": 1,\r\n        \"direccion\": \"Dirección del gestor de residuos\",\r\n        \"isEnabled\": true,\r\n        \"version\": 0,\r\n        \"createdDate\": \"2024-04-15T10:13:31Z\",\r\n        \"lastModifiedDate\": \"2024-04-15T10:13:31Z\"\r\n    },\r\n    \"listOfWasteCenterAuthorization\": [\r\n        {\r\n            \"id\": 1,\r\n            \"authorizationNumber\": \"Número de autorización del centro de residuos\"\r\n        },\r\n        {\r\n            \"id\": 2,\r\n            \"authorizationNumber\": \"Número de autorización del centro de residuos\"\r\n        }\r\n    ],\r\n    \"isEnabled\": true,\r\n    \"version\": 0,\r\n    \"createdDate\": \"2024-04-15T10:13:31Z\",\r\n    \"lastModifiedDate\": \"2024-04-15T10:13:31Z\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8084/api/v1/waste-manager",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"api",
+						"v1",
+						"waste-manager"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/api/v1/waste-manager/6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"v1",
+						"waste-manager",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 6,\r\n    \"nombre\": \"Nombre de prueba update\",\r\n    \"nif\": \"NIF de prueba\",\r\n    \"wasteManagerAddressEntity\": {\r\n        \"id\": 6,\r\n        \"direccion\": \"Direccion de prueba 6\",\r\n        \"lastModifiedDate\": \"2024-04-16T04:03:48.924+00:00\"\r\n    },\r\n    \"listOfWasteCenterAuthorization\": [\r\n        {\r\n            \"id\": 11,\r\n            \"authorizationNumber\": \"Numero de autorizacion de prueba 11\"\r\n        },\r\n        {\r\n            \"id\": 12,\r\n            \"authorizationNumber\": \"Numero de autorizacion de prueba 2\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/api/v1/waste-manager",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"v1",
+						"waste-manager"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
